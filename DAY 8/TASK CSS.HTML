@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Day 8 - CSS Practice</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="SPECIAL AREA .CSS" />
+
+  <!-- Internal CSS -->
+  <style>
+    /* Universal Selector - Reset margins & paddings */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Group Selector */
+    h1, h2, h3 {
+      color: #0078d7;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    /* Type Selector */
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #333;
+      padding: 10px;
+    }
+
+    /* Class Selector */
+    .highlight {
+      background-color: #fff8c4;
+      border-left: 5px solid #f1c40f;
+      padding: 10px;
+    }
+
+    /* ID Selector */
+    #special {
+      color: #e91e63;
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    /* Attribute Selectors */
+    input[type="text"] {
+      border: 2px solid #0078d7;
+      padding: 8px;
+      margin: 5px;
+      border-radius: 4px;
+    }
+
+    input[type="password"] {
+      border: 2px solid #e91e63;
+      padding: 8px;
+      margin: 5px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Practice Tasks</h1>
+  <h2>Full Stack Training</h2>
+  <h3>Day 8 Assignments</h3>
+
+  <!-- Inline CSS -->
+  <p style="color: green; font-size: 20px;">
+    This paragraph is styled using <b>inline CSS</b>.
+  </p>
+
+  <!-- Internal CSS -->
+  <p class="highlight">
+    This paragraph is styled using <b>internal CSS</b> with a class selector.
+  </p>
+
+  <!-- External CSS -->
+  <p id="special">
+    This paragraph will be styled using <b>external CSS</b> from "style.css".
+  </p>
+
+  <!-- Attribute Selectors -->
+  <h2>Login Form Example</h2>
+  <form>
+    <label>Username: </label>
+    <input type="text" placeholder="Enter your username" /><br />
+    <label>Password: </label>
+    <input type="password" placeholder="Enter your password" />
+  </form>
+</body>
+</html>
