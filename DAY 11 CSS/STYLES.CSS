@@ -1,0 +1,13 @@
+body {
+  background-color: #f0f0f0;
+}
+
+.box {
+  margin: 40px;               /* Space outside the box */
+  border: 4px solid #007BFF;  /* Visible border */
+  padding: 20px;              /* Space inside the border */
+  background-color: #ffffff;  /* Content background */
+  font-size: 18px;
+  color: #333;
+  width: 300px;
+}
