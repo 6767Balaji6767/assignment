@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Selectors Task</title>
+
+  <!-- ✅ Internal CSS -->
+  <style>
+    /* Grouped selector for headings */
+    h1, h2, h3 {
+      color: darkblue;
+    }
+
+    /* Universal selector to reset margin and padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Class selector */
+    .intro {
+      font-size: 18px;
+      background-color: #f0f0f0;
+    }
+
+    /* ID selector */
+    #highlight {
+      color: red;
+      font-weight: bold;
+    }
+
+    /* Attribute selectors */
+    input[type="text"] {
+      border: 2px solid green;
+      padding: 5px;
+    }
+
+    input[type="password"] {
+      border: 2px dashed orange;
+      padding: 5px;
+    }
+  </style>
+
+  <!-- ✅ External CSS (linked but only one) -->
+  <link rel="stylesheet" href="style.css"> <!-- Assume style.css exists with 1-2 basic styles -->
+
+</head>
+<body>
+
+  <!-- ✅ Inline CSS (only 1 paragraph) -->
+  <p style="color: purple; font-size: 16px; background: #e0e0e0; padding: 10px; border: 1px solid #999;">
+    This paragraph uses inline CSS for five styles.
+  </p>
+
+  <!-- ✅ Type selector used in internal CSS (h1, h2, h3) -->
+  <h1>Main Heading</h1>
+  <h2>Sub Heading</h2>
+  <h3>Minor Heading</h3>
+
+  <!-- ✅ Class selector -->
+  <p class="intro">This is an introduction paragraph using a class selector.</p>
+
+  <!-- ✅ ID selector -->
+  <p id="highlight">This paragraph uses an ID selector for emphasis.</p>
+
+  <!-- ✅ Attribute selectors -->
+  <form>
+    <label>Username:</label>
+    <input type="text" placeholder="Enter username"><br><br>
+
+    <label>Password:</label>
+    <input type="password" placeholder="Enter password">
+  </form>
+
+</body>
+</html>
